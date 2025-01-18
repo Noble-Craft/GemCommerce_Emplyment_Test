@@ -4,13 +4,115 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>UI_Page</title>
     <link rel="stylesheet" href="styleui.css">
 
 </head>
 <body>
 
+
+<!-- header -->
+<section class="header">
+    <h1>What makes us different <br> makes them stronger</h1>
+
+    
+                    <div class="row">
+                            <div>
+
+                                    <div class="header-col">
+
+                                        
+
+                                                    <img src="RealFood.png">
+                                                        <div>
+                                                            <h3>Real Food</h3>
+                                                            <p>Wholesome recipes for dogs with real <br> meat and veggies.</p>
+                                                        </div>
+                                
+                                    </div>
+                                        
+                                    
+                                            
+                                    <div class="header-col">
+                                
+                                                        <img src="PremiumIngredients.png">
+                                                            <div>
+                                                                <h3>Premium Ingredient</h3>
+                                                                <p>Elevating pet care with unmatched <br> safety and quality.</p>
+                                                            </div>
+                                    
+                                    </div>
+                            </div>             
+
+
+                            
+                                    <div class="grand-image">
+                                        <img src="FoodBowl.png">
+                                    </div>
+                            
+
+                            
+                            <div>
+
+                                    <div class="header-col">
+
+                                        
+
+                                                    <img src="MadeFresh.png">
+                                                        <div>
+                                                            <h3>Made Fresh</h3>
+                                                            <p>We prioritize maintaining the integrity <br> of whole foods and nutrition.</p>
+                                                        </div>
+                                
+                                    </div>
+                                        
+                                    
+                                    
+                                    
+                                        <div class="header-col">
+                                
+                                                        <img src="VetDeveloped.png">
+                                                            <div>
+                                                                <h3>Vet Developed</h3>
+                                                                <p>We raise the bar for dog nutrition,<br> surpassing industry expectations.</p>
+                                                            </div>
+                                    
+                                        </div>
+                            </div>
+                    </div>
+
+
+
+
+    <div class="payment">
+        <div class="payment-text">
+            <p>Get your Dog's healthy meal today!</p>
+        </div>
+
+        <div class="row">
+            <div class="payment-icon">
+
+                <div class="guarant">
+                    <img src="Guarantee.png">
+                </div>
+
+                <div>
+                    <img src="PayPal.png">
+                    <img src="VisaCard.jpg">
+                    <img src="MasterCard.jpg">
+                    <img src="ApplePay.png">
+                    <img src="GPay.png">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Another Section -->
+
+<Section>
 <div class="container">
     <div class="tab-box">
         <button class="tab-btn active">Home</button>
@@ -60,26 +162,10 @@
     </div>
 
 </div>
-<script>
-    const tabs = document.querySelectorAll('.tab-btn');
-    const all_content = document.querySelectorAll('.content');
 
-    tabs.forEach((tab, index) =>{
-        tab.addEventListener('click', (e) =>{
-            tabs.forEach(tab =>{tab.classList.remove('active')})
-            tab.classList.add('active');
+</Section>
 
-            
-        var line=document.querySelector('.line');
-        line.style.width = e.target.offsetWidth + "px";
-        line.style.left = e.target.offsetLeft + "px";
-        
-        all_content.forEach(content => {content.classList.remove('active')});
-        all_content[index].classList.add('active');
-        })
 
-    })
-
-</script>
+<script src="script.js"></script>
 </body>
 </html>
